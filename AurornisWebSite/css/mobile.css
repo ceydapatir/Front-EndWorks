@@ -1,0 +1,93 @@
+p {
+    font-size: 8px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 10px;
+}
+
+.main-header .content p {
+    width: 150px;
+}
+
+.dropdown {
+    padding: 1rem 2rem;
+}
+
+/*about*/
+
+.item .button {
+    height: 20px;
+    font-size: 8px;
+    width: 200px;
+    margin-top: 0rem;
+}
+
+
+/*corporate*/
+.container-info {
+    margin: -6rem 0rem;
+    padding: 6rem 4rem;
+    column-gap: 1rem;
+}
+
+/*product*/
+
+.container-p {
+    margin: 0rem;
+    padding: 4rem 4rem;
+}
+
+.img-1,.img-2, .img-3{
+    width: 100px;
+}
+
+.product .button {
+    height: 20px;
+    width: 100%;
+    font-size: 8px;
+    margin-top: 0rem;
+}
+
+/*contact*/
+
+.contact h2 {
+    font-size: 20px;
+}
+
+.contact label {
+    margin-left: 40%;
+}
+
+.contact form {
+    position: relative;
+    background-image: url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact input {
+    width: 100px;
+    height: 30px;
+}
+
+.container-c {
+    margin: 0rem;
+    margin-bottom: 5rem;
+    grid-template-columns: 100%;
+}
+
+.container-c .item:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.container-c .item:last-child {
+    display: none;
+}

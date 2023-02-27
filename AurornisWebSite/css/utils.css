@@ -1,0 +1,444 @@
+:root {
+    --white:rgb(255, 255, 255);
+    --dark:#060606;
+    --dblue:#1a0e37;
+    --blue:#2f4b74;
+    --lblue:#587cbe;
+    --soft:#7dabd9;
+    --warning:#EB6440;
+    --header: #1a3a39d2;
+}
+
+.bg-header { background-color: var(--header);}
+.bg-dark { background-color: var(--dark);}
+.btn-primary { background-color: var(--warning);}
+
+
+/*--------- HEADER ---------*/
+
+
+.main-header {
+    background-image: url('../img/anasayfa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main-header .content h1{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.main-header .content a{
+    z-index: 2;
+}
+
+.main-header .content h3 {
+    font-size: 3rem;
+    max-width: 60rem;
+    max-height: 2rem 0 3rem;
+    text-align: center;
+}
+
+#tr-eng {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+#logo img {
+    height: 5rem;
+    width: auto;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+
+/*--------- NAVBAR AND CONTENT ---------*/
+
+.dropdown {
+    display: none;
+    align-items: right;
+    justify-content: right;
+    padding-right: 2rem;
+    margin-top: -0.7rem;
+}
+
+.dropdown .dropdown-menu {
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 2.2rem;
+}
+
+.dropdown-menu li {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-align: right;
+    font-size: 10px;
+}
+
+.flex-h .row {
+    position: fixed;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 101%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.flex-h .column {
+    flex: 1;
+}
+
+.navbar-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    color: var(--white);
+    width: 100%;
+    padding: 3rem;
+}
+
+.navbar-h a {
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-top: 2px solid var(--white);
+}
+
+.navbar-h a:hover {
+    border-top: 2px solid var(--soft);
+    transition-duration: 0.8s;
+}
+
+.navbar-h ul {
+    display: flex;
+}
+
+.main-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 10rem 10rem;
+}
+
+
+/*-------------- ABOUTUS ----------------*/
+
+
+.about {
+    color: #060606;
+}
+
+.about h1{
+  font-size: 60px;
+}
+
+.container-a {
+    display: grid;
+    margin: 4rem 10rem;
+    padding-top: 10rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr;
+}
+
+.container-a .item:first-child {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column: 2;
+    padding-top: 2rem;
+}
+
+.container-a .item:last-child {
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 5rem;
+}
+
+.container-a .item1 {
+    grid-row-start: 1; 
+    grid-row-end: 3;
+}
+
+
+
+/*-------------- CORPORATE ----------------*/
+
+
+.info {
+    color: #060606;
+}
+
+.container-info {
+    display: grid;
+    margin: 10rem;
+    column-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 4fr;
+    align-items: center;
+	justify-content: center;
+}
+
+.container-info .item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    align-items: center;
+	justify-content: center;
+}
+
+.container-info .item:last-child {
+    grid-row: 3;
+  grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/*-------------- PRODUCT ----------------*/
+
+
+.product {
+    color: #060606;
+}
+
+.product h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.product h2 {
+    margin-top: 5rem;
+}
+
+.product p {
+    margin-top: 5rem;
+}
+
+.product .button {
+    width: 100%;
+}
+
+.container-p {
+    display: grid;
+    margin: 5rem;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-rows: 1fr auto auto 1fr;
+}
+
+.container-p .item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 3rem;
+}
+
+.container-p .item:last-child {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 4;
+}
+
+
+/*-------------- CONTACT ----------------*/
+
+.contact {
+    color: #060606;
+}
+
+.contact input {
+    border: solid 1.5px #2f4b74;
+    background: white;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--dblue);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 200px;
+}
+
+.contact label {
+    position: absolute;
+    margin-left: 10rem;
+    left: 16px;
+    color: var(--dblue);
+    pointer-events: none;
+    transform: translateY(0.5rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact input:focus {
+    outline: none;
+}
+
+.contact input:focus ~ label {
+    transform: translateY(-70%) scale(0.8);
+    background-color: none;
+    padding: 0 0.5em;
+    color: var(--white);
+}
+
+.container-c {
+    display: grid;
+    margin: 10rem;
+    align-items: center;
+	justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container-c .item:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+.container-c .item:last-child {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*------------ 3D IMAGE -------------*/
+
+.card-3d-wrap {
+    width: 170px;
+    height: 200px;
+    margin-top: 40px;
+    z-index: -1;
+}
+  
+.img-1{
+    width: calc(80% + 160px);
+    opacity: 1;
+}
+
+.img-2{
+    width: calc(80% + 160px);
+    opacity: 1;
+}
+.img-3{
+    width: calc(80% + 160px);
+    opacity: 1;
+}
+
+/*------------ FOOTER -------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+}
+
+.footer a {
+    color: var(--white);
+    margin-right: 5px;
+}
+
+.footer a:hover {
+    opacity: 0.7;
+}
+
+/*-----CARD-----*/
+/*
+.card {
+	width: calc(50% + 200px);
+	height: 20rem;
+	perspective: 150rem;
+}
+
+.card .card-front,
+.card .card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	border-radius: 5px;
+	box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+	transition: 0.9s cubic-bezier(.25,.8,.25,1);
+	transform-origin: left center;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+.card-back {
+	background: linear-gradient(-45deg, var(--dark), var(--white));
+	transform: rotateX(180deg);
+}
+
+.card:hover .card-front {
+	transform: rotateX(-180deg);
+}
+
+.card:hover .card-back {
+	transform: rotateX(0deg);
+	z-index: 2 !important;
+}
+*/
+
+/*
+<div data-aos="fade-right" class="item">
+          <div class="card">
+            <div class="card-back">
+              <img src="img/card1.jpg" alt="">
+            </div>
+            <div class="card-front">
+              <img src="img/card2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="item item2">
+          <div class="card">
+            <div class="card-back">
+              <img src="img/card3.jpg" alt="">
+            </div>
+            <div class="card-front">
+              <img src="img/card4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+*/
+/*
+<!-----3D PRODUCT CSS----->
+    <section id="3d" class="animate">
+      <model-viewer id="mv-demo" shadow-intensity="1" src="./img/hurkus-c.glb" alt="A 3D model of an astronaut"
+        auto-rotate camera-controls poster="./spacesuit.jpg"></model-viewer>
+    </section>
+*/
+
+
+.animate model-viewer {
+    width: 70%;
+    height: 300px;
+    margin-left: 15%;
+    z-index: 2;
+    margin-top: 4rem;
+}
